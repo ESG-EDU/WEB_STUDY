@@ -18,5 +18,5 @@
 
 ## Database
 
-- [1. RDB 알아보기](https://github.com/ESG-EDU/Docs/tree/main/databaseㅍ)
+- [1. RDB 알아보기](https://github.com/ESG-EDU/Docs/tree/main/database)
 - [2. NoSQL 알아보기](#)
