@@ -5,9 +5,9 @@
 - [1. html 알아보기](https://github.com/ESG-EDU/Docs/tree/main/html)
 - [2. css 알아보기](https://github.com/ESG-EDU/Docs/tree/main/css)
 - [3. javascript 알아보기](https://github.com/ESG-EDU/Docs/tree/main/javascript)
-- [4. node.js 알아보기](#)
+- [4. node.js 알아보기](https://nodejs.org/ko)
 - [5. react 알아보기](https://github.com/ESG-EDU/Docs/tree/main/react)
-- [6. typescript 알아보기](#)
+- [6. typescript 알아보기](https://www.typescriptlang.org/)
 
 ## BackEnd 
 
