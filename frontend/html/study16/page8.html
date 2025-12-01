@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>rest parameter</title>
+	<script>
+    // ---------------------------------------------------
+    // rest parameter : ...변수명   <--전개연산자와 다른 것.
+    // ㄴ 타입은 배열(Array)이며 타입은 고정되어 있다.
+    // ---------------------------------------------------
+
+    // 1. 함수 정의 =======================================
+    function sum(a, b, ...args) {
+      let result = a + b
+      let total = a + b
+      console.log('args : ', args)
+      console.log('합 >> ', result)
+      
+      for(let value of args) {
+        total += value
+      }
+      console.log('누적 합 >> ', total)
+    }
+
+    // 2. 함수 호출 =======================================
+    sum(4, 7)
+    sum(2, 3, 5) // 10
+    sum(1, 2, 7, 10, 15) // 35
+    </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

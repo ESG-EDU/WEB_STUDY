@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>화살표 함수</title>
+	<script>
+    // =============================================
+    // 화살표 함수 : arrow function (Lambda) <-- 익명함수
+    // =============================================
+    // var sum = function(a, b) {
+    //   return a + b
+    // }
+    // 1) body의 {} 생략, return 생략
+    // : body 내 명령어가 1개일 경우, body의 {} 생략 가능
+    // : => 오른쪽 값은 무조건 return
+    // var sum = (a, b) => a + b
+
+    // 2) body의 {} 명시 
+    // : body의 {}가 들어오는 순간 return이 되지 않기 때문에 직접 return 키워드를 입력해야 한다.
+    var sum = (a, b) => {
+      return a + b;
+    }
+    var result = sum(4, 6)
+    console.log('result >> ', result)
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

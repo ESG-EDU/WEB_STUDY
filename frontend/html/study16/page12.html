@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>중첩 함수</title>
+	<script>
+    // =================================
+    // [중첩 함수] 함수 정의 내 함수 정의
+    // =================================
+    function createHello() {
+      console.log('>>> 함수 시작')
+
+      // creatHello 실행을 하지 않아도 별도로 실행 가능
+      function hello(name) {    // 주소를 통해서 외부로 넘겨줄 수 있다.
+        console.log('... hello() 함수 시작')
+        console.log(name + '님, 안녕하세요!')
+        console.log('... hello() 함수 종료')
+      }
+      
+      console.log('>>> 함수 종료')
+      return hello;
+    }
+
+    var result = createHello()
+    result('홍길동')
+    console.log('... 프로그램 종료 ...')
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

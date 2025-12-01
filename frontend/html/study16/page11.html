@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>인수</title>
+	<script>
+    // [함수 정의] ==================
+    function hello() {
+      console.log('Hello~~~~')
+    }
+
+    function hi() {
+      console.log('Hi!!!!!!')
+    }
+
+    function execute(args) {      // function의 매개변수에 함수명을 넣어줄 수 있다.
+      console.log('>>> 함수 실행 시작')
+      args()
+      console.log('>>> 함수 실행 종료')
+    }
+
+    // [함수 호출] ==================
+    // hello()
+    execute(hello)
+    execute(hi)
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

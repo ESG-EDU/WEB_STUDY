@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>생성과 실행 순서</title>
+	<script>
+    /*
+      ==================================================
+      [생성 순서] 함수 선언식 -> 익명함수(함수 표현식)
+      [실행 순서] 익명 함수  -> 함수 선언식
+      ==================================================
+    */
+
+    // [함수 선언식] 선언적 함수, ㅣ일반 함수
+    // function hi(name) {
+    //   console.log(name + ', 안녕~ [일반 함수]')
+    // }
+
+    // [함수 표현식] 익명 함수를 변수에 저장
+    const hi = function(nickname) {   // const로 선언하는 이유 : 
+      console.log(nickname + '님, 안녕하세요!')
+    }
+
+    // 함수 호출
+    console.log('>>> 함수 호출 전')
+    hi('홍길동')
+    console.log('>>> 함수 호출 후')
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

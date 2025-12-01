@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>문자열</title>
+	<script>
+    const today = "Good~";
+    // 문자열 길이
+    console.log('문자열 길이 :', today.length)
+    
+    // 특정 문자 변경
+    // -일치하는 첫 번째만 변경
+    console.log(today.replace('o', 'ap-'))
+    // 일치하는 모두 변경
+    console.log(today.replaceAll('o', 'ap-'))
+    
+    // 특정 위치의 문자 추출
+    // 1. 문자열.substring(시작 인덱스, 끝 인덱스)
+    // : 끝 인덱스 제외
+    // const today = "Good~";
+    console.log(today.substring(1, 4))
+    
+    // 2. 문자열.slice(시작 인덱스, 끝 인덱스)
+    console.log(today.slice(1, 5))
+    console.log(today.slice(1))
+    console.log(today.slice(-4))
+    
+    // 특정 문자 기준으로 분리(쪼개기)
+    // : 배열로 리턴
+    // : 기준으로 사용된 문자는 요소에 없음
+    // const today = "Good~";
+    console.log(today.split('d'))
+
+    // 특정 문자 추가
+    // 문법 : 문자열.padStart(문자열 전체 길이, '추가할 문자')
+    // const today = 'Good~' ;
+    console.log(today.padStart(10, '*'))
+    // 문법 : 문자열.padEnd(문자열 전체 길이, '추가할 문자')
+    console.log(today.padEnd(10, '*'))
+
+    // 특정 문자 찾기 : true/false
+    console.log(today.includes('d'))
+    console.log(today.includes('Go'))
+    console.log(today.includes('go'))
+
+    // 특정 문자의 위치(index) 리턴
+    // - 있음 : 탐색된 첫 번째 문자의 인덱스 리턴
+    // - 없음 : -1 리턴
+    // const today = 'Good~';
+    console.log(today.indexOf('o'))
+    console.log(today.indexOf('Go'))
+    console.log(today.indexOf('h'))
+
+    // 반복
+    console.log(today.repeat(3))
+    console.log('안녕'.repeat(3))
+
+    // 대소문자 변경
+    console.log(today.toUpperCase())
+    console.log(today.toLowerCase())
+
+    // 공백 제거
+    const say = '  Hi~  ';
+    console.log(say);
+    console.log('|'+say+'|');
+    console.log('|'+say.trimStart()+'|'); // 왼쪽 공백 제거
+    console.log('|'+say.trimEnd()+'|'); // 오른쪽 공백 제거
+    console.log('|'+say.trim()+'|'); // 양쪽 공백 제거
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

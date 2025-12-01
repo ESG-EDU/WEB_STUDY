@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>arguments</title>
+	<script>
+    // 1. 함수 정의 ==========================
+    function avg() {
+      var total = 0;
+      console.log('>>> avg() 실행')
+      console.log('arguments : ', arguments)
+      console.log('arguments 길이 : ', arguments.length) // .접근을 통하여 길이
+      //반복문을 통한 인수 출력
+      for(let i=0; i<arguments.length; i++) {
+        console.log(`arguments[${i}] : ${arguments[i]}`)
+        total += arguments[i]
+      }
+      console.log('총합 : ', total)
+      //평균 구하기                         // toFixed()는 소수점 자리수 출력 범위 설정
+      var mean = (total / arguments.length).toFixed(2)
+      return mean
+    }
+
+    // 2. 함수 호출 ===========================
+    var result = avg(2, 3, 5)
+    console.log('avg(2, 3, 5) 호출 결과 : ', result)
+    // console.log('[함수 밖] arguments : ', arguments)  // <-- 함수밖에서는 사용 불가(Error)
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

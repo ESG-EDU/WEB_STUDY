@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>함수 정의 및 호출</title>
+	<script>
+    /*
+    ================================================
+    [사용자 정의 함수]
+    << 함수 정의 >>
+    function 함수명(매개변수1, 매개변수2) {
+      명령어;
+      return 값;    <-- 있어도 되고 없어도 됨
+    }
+
+    << 함수 호출 >>
+    함수명(인수1, 인수2)
+
+    [함수 정의 형태] --------------------------------
+    1. 매개변수 없고, 리턴값 없음
+    2. 매개변수 없고, 리턴값 있음
+    3. 매개변수 있고, 리턴값 없음
+    4. 매개변수 있고, 리턴값 있음
+    ================================================
+
+    [return 의미] -----------------------------------
+    - 함수 실행 끝
+    - 호출한 쪽으로 리턴값 넘김
+    -------------------------------------------------
+
+    [함수 실행 끝] ----------------------------------
+    - return
+    - body의 }  <-- 닫힌 중괄호
+    -------------------------------------------------
+    */
+    // 2. 함수 호출
+    // NaN : Not a Number
+    var result = add()
+    console.log('1.덧셈 결과 >> ', result)
+    
+    // NaN : Not a Number
+    var result = add(1)
+    console.log('2.덧셈 결과 >> ', result)
+
+    var result = add(1, 3)
+    console.log('3.덧셈 결과 >> ', result)
+    
+    var result = add(2, 4, 8)   // <-- 개수에 맞게 호출 실행됨.
+    console.log('4.덧셈 결과 >> ', result)
+    
+    var result = add('오늘', '하루')  // <-- 문자열은 이어준다.
+    console.log('5.덧셈 결과 >> ', result)
+    
+    var result = add(2.4, 1.2)
+    // var result = add(2.4, 1.2).toFixed(2)
+    console.log('6.덧셈 결과 >> ', result) 
+    
+    var result = add(5, 1.2)
+    console.log('7.덧셈 결과 >> ', result) 
+
+    // 1. 함수 정의 : 매개변수 있고, 리턴값 있는 형태
+    function add(x, y) {  // JS 매개변수는 어떠한 타입도 다 받아준다.
+      console.log('=========================')
+      console.log('매개변수 x : ', x)
+      console.log('매개변수 y : ', y)
+      var total = x + y
+      return total
+    }
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

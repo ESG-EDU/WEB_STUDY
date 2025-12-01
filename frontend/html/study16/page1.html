@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>내장함수</title>
+	<script>
+    // [내장 함수] : 이미 정의된 함수
+    // eval : 문자열로 표현된 식을 계산하는 함수
+    var sum = eval('1 + 2 + 3');
+    document.write('덧셈 결과 >> ', sum);
+    document.write('<br>');
+    
+    // 형변환 : 정수
+    document.write('문자열을 정수로 형변환 >> ', parseInt('5'));
+    document.write('<br>');
+    document.write('문자열을 정수로 형변환 : type >> ',typeof parseInt('5'));
+    document.write('<br>');
+    document.write('실수를 정수로 형변환 >> ',parseInt(5.23));
+    document.write('<br>');
+
+    // 형변환 : 실수
+    document.write('문자열을 실수로 형변환 >> ', parseFloat('5.25'));
+    document.write('<br>');
+    document.write('문자열을 실수로 형변환 : type >> ',typeof parseFloat('5.25'));
+    document.write('<br>');
+    document.write('정수를 실수로 형변환 >> ', parseFloat(5));
+    document.write('<br>');
+    document.write('실수 >> ', 5.0);
+  </script>
+</head>
+<body>
+	
+</body>
+</html>

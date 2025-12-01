@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>확인창</title>
+	<script>
+    // 확인 버튼을 클릭하면, 
+    //  '리턴값은 true이고, 확인을 클릭했습니다.' 를 화면에 출력
+    // 취소 버튼을 클릭하면,
+    //  '리턴값은 false이고, 취소를 클릭했습니다.' 를 화면에 출력
+    var answer = confirm('입력을 완료했나요?');
+    // document.write(answer);
+    if(answer) {
+    	document.write('리턴값은 ' + answer + '이고, 확인을 클릭했습니다.');
+		}
+    else {
+    	document.write('리턴값은 ' + answer + '이고, 취소를 클릭했습니다.');
+		}
+  </script>
+</head>
+<body>
+</body>
+</html>

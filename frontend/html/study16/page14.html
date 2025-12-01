@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>중첩 함수</title>
+	<script>
+    function loopHello() {
+      let count = 0;
+      
+      let printHello = function() {
+        count++
+        console.log(`${count} : Hello`)
+
+        if(count == 10) {
+          clearInterval(s)
+        }
+      }
+
+			// setInterval(함수, 1/1000초)
+      // 일정한 간격으로 특정한 작업을 반복적으로 수행하고자 할 때 사용
+      var s = setInterval(printHello, 1000);  
+    }
+
+    loopHello()
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

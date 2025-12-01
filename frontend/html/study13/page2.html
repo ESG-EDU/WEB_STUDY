@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>자료형</title>
+	<script>
+		/*
+		[기본 타입] Primitive Type
+		- number    : 숫자(정수, 실수)
+		- bigint    : 정수 -(2의 53승 -1) ~ 2의 53승-1
+		- string    : 문자열
+		- boolean   : 논리값(true, false)
+		- undefined : 초기화되지 않은 상태, 변수 초기화에 사용
+		- null      : 객체 변수 초기화 사용
+		- NaN       : Not a Number
+
+		[참조 타입] 참조형, Reference Type
+		- array
+		- function
+		- ...
+		*/
+
+		// [변수선언]
+		// var 변수명;
+		var num;
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		num = 100;
+		document.write('num >>' +num + '<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		num = 5n;
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		num = 2.2;
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		num = '안녕';
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		num = true;
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+	</script>
+</head>
+<body>
+</body>
+</html>
