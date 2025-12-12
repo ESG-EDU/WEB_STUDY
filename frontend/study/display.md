@@ -10,3 +10,30 @@
 ## 2. Grid
 
 `display: grid` 또는 `display: inline-grid`를 선언한 **부모 요소** 의 Container 안에서 Grid 레이아웃 규칙이 적용됩니다.
+
+
+### Flex : flex-grow (유연하게 늘리기)
+```css
+flex-grow: 1;
+flex-grow: 0;  /* 기본값 */
+```
+
+### Flex : align-items (수직축 방향 정렬)
+```css
+align-items: stretch;
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: baseline;
+```
+
+### Flex : align-content (여러 행 정렬). > flex-wrap: wrap; 설정 후 사용
+```css
+align-content: stretch;
+align-content: flex-start;
+align-content: flex-end;
+align-content: center;
+align-content: space-between;
+align-content: space-around;
+align-content: space-evenly;
+```
