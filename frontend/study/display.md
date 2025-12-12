@@ -37,3 +37,21 @@ align-content: space-between;
 align-content: space-around;
 align-content: space-evenly;
 ```
+
+### Flex : justify-content (메인축 방향 정렬)
+```css
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+```
+
+### Flex : flex-direction (배치 방향 설정)
+```css
+flex-direction: row;
+flex-direction: column;
+flex-direction: row-reverse;
+flex-direction: column-reverse;
+```
